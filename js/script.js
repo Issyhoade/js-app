@@ -24,3 +24,17 @@ let pokemonList = [
   }
 ];
 // Added the same keys to avoid errors //
+
+// Loop through each Pokémon in the list
+for (let i = 0; i < pokemonList.length; i++) {
+  let pokemon = pokemonList[i]; // Store the current Pokémon object
+  let output = `${pokemon.name} (height: ${pokemon.height})`; // Create a basic output string
+
+  // Check if the height is greater than 6 (choose a value where only ONE Pokémon qualifies)
+  if (pokemon.height > 6) {
+    output += " - Wow, that’s big!"; // Add special note
+  }
+
+  // Write the output to the webpage
+  document.write(output + "<br>");
+}
