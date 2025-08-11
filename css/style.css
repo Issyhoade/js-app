@@ -1,0 +1,27 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style for the text output by JavaScript */
+/* Since document.write outputs directly to the body, you can target it */
+/* Or if you wrap it in a div later, you can style that div */
+body > br { /* This targets the <br> tags added by document.write */
+    margin-bottom: 5px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
